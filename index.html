@@ -1,0 +1,149 @@
+<html>
+<head>
+  <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <center>
+        <h4 id="title">Case Study Bettween Mobile Net and Google Lens</h2>
+
+        <ol>
+            <div class="col-xs-12 items">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - </b>
+                    <img src="https://pyxis.nymag.com/v1/imgs/1f3/638/dd5de680bf3d516e589ee1bd5422540a42.2x.rdeep-vertical.w245.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                Output on <b>GOOGLE LENS</b> -
+                    <span>Watter Bottle</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                Output on <b>Mobile Net</b> - 
+                    <span>Watter Bottle</span>
+                </h5>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Draw</h4>
+                </div>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="col-xs-12 items">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - </b>
+                    <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/4e894c2b76dd4c8e9013aafc016047af_9366/Superstar_Shoes_White_FV3284_01_standard.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                Output on <b>GOOGLE LENS</b> - 
+                    <span>Mask</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                Output on <b>Mobile Net</b> - 
+                    <span>Mask</span>
+                </h5>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Draw</h4>
+                </div>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="col-xs-12 items">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - </b>
+                    <img src="https://www.adesso.com/wp-content/uploads/2020/06/PPE-100_1.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                Output on <b>GOOGLE LENS</b> - 
+                    <span>Shoes</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                Output on <b>Mobile Net</b> - 
+                    <span>Mask</span>
+                </h5>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Google Lens is more acurate</h4>
+                </div>
+            </div> 
+            
+            <br><br><br><br>
+
+            <div class="col-xs-12 items">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - </b>
+                    <img src="https://media.istockphoto.com/photos/fan-of-playing-cards-consisting-of-four-ace-isolated-on-white-3d-picture-id1215907195?k=20&m=1215907195&s=170667a&w=0&h=6nCGU8ARPMXLvaKnnIqgpwvyypRa5ikYJIENg-CrHL4=" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                Output on <b>GOOGLE LENS</b> - 
+                    <span>Playing Cards</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                Output on <b>Mobile Net</b> - 
+                    <span>Band Aid</span>
+                </h5>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Google Lens is more acurate</h4>
+                </div>
+            </div> 
+            
+            <br><br><br><br>
+
+            <div class="col-xs-12 items">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - </b>
+                    <img src="https://i5.walmartimages.com/asr/821904e1-ee25-4e1c-a732-61ab857c07a7.d752787231d8292db51105ff96ed65e9.jpeg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                Output on <b>GOOGLE LENS</b> - 
+                    <span>Phone</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                Output on <b>Mobile Net</b> - 
+                    <span>Phone</span>
+                </h5>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Draw</h4>
+                </div>
+            </div>
+        </ol>
+
+        <p>Out of the 5 objects I have tested 3 of them were Draw.
+            Google Lens was more acurate for 2 of them.
+            Acording to my case study Google Lens is more accurate
+        </p>
+    </center>
+</body>
+</html>

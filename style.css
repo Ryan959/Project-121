@@ -1,0 +1,28 @@
+#title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+}
+
+.items{
+    background-color: gray;
+    width: 75%;
+    margin-left: 100px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+span{
+    color: red;
+}
+
+img{
+    border-radius: 10px;
+    height: 100px;
+}
+
+p{
+    margin-top: 1250px;
+    color:red;
+    font-size: 20px;;
+}
